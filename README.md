@@ -61,3 +61,6 @@ The usage of ordinal encoding was based on the assumption that the numerical val
 
 Handling Imbalanced data:
 Instead of balancing the test set of the dataset, the technique was performed on the entire dataset. Hence the accuracy of all the models is skewed and not admissible. 
+
+
+# NOTE: THESE IMPLEMENTATIONS WILL BE FIXED SOON
