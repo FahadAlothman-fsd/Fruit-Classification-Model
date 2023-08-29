@@ -48,19 +48,3 @@ The following performance measures were used to compare across students' models:
 Once the optimal parameters were found, the models were tested on the testing set.
 
 
-### For transparency's sake
-
-I need to mention that some of the techniques used to handle missing and imbalanced data were implemented incorrectly. 
-
-#### Handling feature "X2":
-KNN Imputer was used to fill in the missing values. However, this was performed on the entire dataset and not the testing set. Hence the dataset is skewed, which will, in turn, skew the accuracy of the models trained on the dataset. 
-
-#### Handling feature "X14" and "X13":
-I should have used One Hot encoding for both of these features because there is no known correlation between the numeric values within the categorical feature.
-The usage of ordinal encoding was based on the assumption that the numerical values inside the categorical features are ordinal. 
-
-#### Handling Imbalanced data:
-Instead of balancing the test set of the dataset, the technique was performed on the entire dataset. Hence the accuracy of all the models is skewed and not admissible. 
-
-
-# NOTE: THESE IMPLEMENTATIONS WILL BE FIXED SOON
